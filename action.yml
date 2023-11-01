@@ -63,7 +63,7 @@ runs:
         INPUT_PATH: ${{ inputs.path }}
 
     - name: Upload artifact
-      uses: meta-introspector/upload-artifact
+      uses: meta-introspector/upload-artifact@main
       with:
         name: ${{ inputs.name }}
         path: ${{ runner.temp }}/artifact.tar
